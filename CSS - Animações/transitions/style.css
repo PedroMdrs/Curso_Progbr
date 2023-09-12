@@ -1,0 +1,18 @@
+.btn{
+    display: inline-block;
+    padding: 20px;
+    background-color: yellowgreen;
+    color: aliceblue;
+    font-size: 30px;
+
+    /* transition-property: background-color, padding;
+    transition-duration: .5s, 1s;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out; */
+    transition: background-color .5s  ease-out, padding .3s;
+}
+.btn:hover{
+    background-color: violet;
+    padding-left: 30px;
+    padding-right: 30px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FODASE</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        button {
+            height: 25px;
+            width: 100px;
+            margin: 5px;
+        }
+
+        input {
+            width: 300px;
+            height: 150;
+        }
+
+        
+      
+    </style>
+</head>
+
+<body>
+    <h1>Lista de Tarefas</h1>
+    <input type="text" id="input"> <br>
+    <button onclick="addTask()">Add</button>
+    <button onclick="delTask()">Del</button>
+    <div>
+        <h2 id="list"></h2>
+    </div>
+
+    <script>
+        let tasks = [];
+        const list = document.getElementById("list");
+
+        
+        function addTask() {
+            let newTask = document.getElementById("input").value;
+            tasks.push(newTask);
+            list.innerHTML += `<li> ${newTask} </li> `;
+            localStorage.setItem("taskList", JSON.stringify(tasks));
+
+        }
+        function delTask() {
+            localStorage.clear();
+            list.innerHTML = ""
+        }
+        onload = function () {
+            let storageValue = localStorage.getItem("taskList");
+            if(storageValue != null){
+                tasks = JSON.parse(storageValue)
+            }
+            for(let x of tasks) {
+                list.innerHTML += `<li> ${x} </li> `
+            }
+        }
+
+    </script>
+</body>
+
+</html>

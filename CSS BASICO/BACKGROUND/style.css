@@ -1,0 +1,18 @@
+#FODASE{ 
+    color: rgb(20,100,200); /* rgb tem 3 valores */ 
+    
+}
+.CAGUEI{
+    color: rgba(66, 2, 119, 0.3);
+    background-color: blueviolet;
+
+} /* rgba tem 4 valores sendo o 4 a transperencia*/
+.lixo{
+    color: #ff50ff
+}
+body{
+    background: url(0cb2e18d3d99214faf4adbd7261d3995.gif) center/cover no-repeat;
+    /* ordem: color - bd-image position/bg/size bg-repeat bg origin bg clip bg attachment initial|inherit
+    background-repeat: no-repeat
+    background-size: cover; */ 
+}

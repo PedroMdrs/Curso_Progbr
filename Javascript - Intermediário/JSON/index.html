@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<script>
+    // JSON eh uma representacao de um objeto. JSON = java script object notation. Eh uma forma de se representar um objeto javascript.
+    // Em alguns momentos vai ser necessario gravar um objeto java script em algum lugar, mas nao vai ser permitido passar o objeto e sim uma string que representa um objeto. Json ajuda a fzr isso
+    // JSON tem dois metodos. Parse e Stringfy
+    // Stringfy pega um objeto JSON e transforma em uma string
+    // Parse pega uma string e tenta transformar em um objeto JSON
+    
+    let a = aluno = {
+        nome: "pedro",
+        nota: 8.54
+    }
+    let b = JSON.stringify(a);
+
+    let c ='{"nome": "fabio", "nota": 7.8}';
+    let d = JSON.parse(c)
+    console.log(a);
+    console.log(b)
+    console.log(c)
+    console.log(d)
+
+
+</script>
+<body>
+    
+</body>
+</body>
+</html>

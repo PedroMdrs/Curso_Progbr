@@ -1,0 +1,36 @@
+h1{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: large;
+}
+.cartao{
+    background: url("backgorund.png") , no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 1px 20px;
+    margin: auto;
+    margin-top: 10%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#insta {
+    list-style-image: url("Insta.png");
+}
+#tt{
+    list-style-image: url("Twitter.png");
+}
+#you{
+    list-style-image: url("Youtube.png");
+}
+body{
+    background-color: black;
+}
+ul{
+    font-family: 'Roboto Flex', sans-serif;
+}
+li{
+    padding: 2px;
+}

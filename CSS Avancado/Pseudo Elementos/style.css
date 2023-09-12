@@ -1,0 +1,21 @@
+p::first-letter{
+    font-size: 2rem;
+    color: rebeccapurple;
+}
+li{
+    list-style: none;
+}
+li::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(612dfk.png);
+    background-repeat: no-repeat;
+    position: center;
+    background-size: cover;
+}
+p::selection{
+    background-color: yellow;
+    color: violet;
+}

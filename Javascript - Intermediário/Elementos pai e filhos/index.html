@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<script>
+    window.onload = function(){
+        // com a propriedade children da pra pegar os filhos do elemento e com a propriedade parentelement da pr apegar o pai
+        let h1 = document.getElementsByTagName("h1")
+        console.log(h1)
+        for(x of h1) {
+            addEventListener("click", qop)
+        }
+        function qop(e){
+            let t = e.target;
+            console.log(t.parentElement);
+        }
+}
+</script>
+<body>
+    <div id="d1">
+        <h1>titulo</h1>
+        <p>qualquer cadas</p>
+    </div>
+    <div id="d2">
+        <h1>titulo2</h1>
+        <p>qualquer cada2222s</p>
+    </div>
+</body>
+</body>
+</html>

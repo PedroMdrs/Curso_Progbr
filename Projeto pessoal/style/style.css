@@ -1,0 +1,357 @@
+html, body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    overflow-x: hidden;
+}
+/* >>>>>>>>>>>>>>>>>> NAV BAR <<<<<<<<<<<<<<<<<<< */
+.navbar{
+    width: 100%;
+    position: fixed;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    z-index: 2;
+    transition: all .3s ease-in-out;
+}
+.scrolled{
+    background-color: #010003c9;
+    box-shadow: 0px 4px 44px black;
+    border-bottom: 1px solid #fff;
+    transition: all .2s ease-in-out;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.navbar li a{
+    color: white;
+    letter-spacing: 2px;
+    margin-right: 20px;
+    font-size: 30px;
+}
+.navbar li a:hover{
+    background-color: rgba(90, 87, 87, 0.384);
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HOME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+#home{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/171c03ec708b5d9f_cde405f32b5523f6_19007015157735661143215.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+#home h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5vw;
+}
+#home h2{
+    text-align: center;
+    color: white;
+    font-size: 2.5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAINS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+ .textos{
+    color: whitesmoke;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 5px;
+ }
+
+
+#mains{
+    /* background-color: yellowgreen; */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#sec1{
+    /* background-color: aquamarine; */
+    height: 50%;
+    display: flex;
+    padding: 5px;
+}
+#yasuo{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin-right: 10px;
+    border: 3px solid white;
+    
+    
+}
+.image{
+    width: 100%;
+    height: auto;
+    
+}
+.overlay {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 139, 186, 0.753);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+#yasuo:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+.text{
+    color: whitesmoke;
+    font-size: 2vw;
+    position: absolute;
+    overflow: hidden;
+    text-align: justify;
+    text-align-last: center;
+    top: 25%;
+    left: 5%;
+    right: 5%;
+    font-weight: 400;
+  }
+#zed{
+    width: 50%;
+    height: 100%;
+    border: 3px solid white;
+    position: relative;
+    
+  }
+#zed .overlay{
+    background-color: rgb(42, 26, 82, 0.753);
+}
+#zed:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+#sec2{
+    height: 50%;
+    display: flex;
+    padding: 5px;
+}
+#yone{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin-right: 10px;
+    border: 3px solid white;
+  }
+#yone .overlay{
+    background-color: rgb(143, 13, 52, 0.753);
+}
+#yone:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+#mordekaiser{
+    width: 50%;
+    height: 100%;
+    border: 3px solid white;
+    position: relative;
+ }
+#mordekaiser .overlay{
+    background-color: rgb(1, 36, 17, 0.753);
+}
+#mordekaiser:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+#mordekaiser .text{
+    font-size: 1.5vw;
+    top: 20%;
+}
+
+img{
+    vertical-align:middle;
+    width: 100%; 
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> WAIFUS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+#waifu{
+    box-sizing: border-box;
+    overflow: hidden;
+    /* background-color: blue  ; */
+}
+#container{
+    /* background-color: blueviolet; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.mais{
+    width: 25%;
+    height: 100%;
+    border: 3px solid whitesmoke;
+    margin: 3px;
+    position: relative;
+    
+
+}
+.overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #9500ba;
+  }
+.mais:hover .overlay2 {
+    opacity: 0.8;
+  }
+.imagee{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.textt{
+    color: whitesmoke;
+    font-size: 2vw;
+    position: absolute;
+    overflow: hidden;
+
+    text-align-last: center;
+    top: 40%;
+    left: 5%;
+    right: 5%;
+    font-weight: bolder;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORM <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+#form{
+    height: 1090px;
+    background-image: url(../assets/bgmakima.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding-bottom: 160px;
+}
+#form .textos{
+    margin-top: 10px
+}
+.card{
+    position: absolute;
+    height: 750px;
+    width: 70%;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    box-sizing: border-box;
+    color: azure;
+    background-color: rgba(230, 108, 86, 0.5);
+    border: 2px solid rgb(46, 79, 94);
+
+}
+.card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.form h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    position: relative;
+}
+.card label{
+    font-family: 'Roboto Flex', sans-serif;
+}
+.textfield input{
+    border: none;
+    height: 35px;
+    padding: 10px;
+    outline: none;
+}
+.textfield textarea{
+    resize: none;
+    outline: none;
+    border: none;
+}
+textarea::placeholder {
+    opacity: 1;
+    text-align: justify;
+    text-align-last: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+    font-family: 'Poppins', sans-serif;
+
+}
+.card input[type="submit"] {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+.card input[type="submit"]:hover {
+    background-color: rgb(226, 59, 30);
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    height: 60px;
+}
+.logodiv{
+    width: 30px;
+    margin-right: 20px;
+}
+footer a{
+    color: black;
+}
+footer a:hover{
+    background: none;
+}
+@media (max-width: 520px) {
+    .navbar ul {
+        display: flex;
+        /* padding: 0px; */
+        align-items: center;
+        flex-direction: column; }
+}

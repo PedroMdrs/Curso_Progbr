@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 1.2rem;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- display block: div e paragrafo tem display block,o display block eh um bloco e vai do inicio ate o fim da pagina, quando o elemento display block acaba ele vai pra proxima linha. O paragrafo tem espaco e div nao porque a tag de paragrafo vem com uma margem nela
+        display inline: span por exemplo tem display inline, significa que fica na mesma linha quando acaba.
+        displayinlineblock: a diferenca eh que no displayinline block ele permite modificar a largura e altura
+        display none: eh como se o elemento nunca tivesse colocado na tela, some totalmente com o bagulho. "nao mostre esse elemento na tela "  -->
+    <div style="background-color: blue";>
+        <div> div normal</div>
+        <div> e aqui a historia <div style="background-color: red; width:500px; "> de dentro </div> continua </div>
+
+    </div>
+    <div style="background-color: blue">
+        <p style="background-color: red; margin: 0;" > este eh um paragrafo normal</p>
+        <p style="background-color: red; margin: 0;"> e aqui a historia continua </p>
+
+    </div>
+    <p style="background-color: blue"> 
+        inicio de um paragraco <span style="background-color:red; height: 400px; width: 400px; display: inline-block;"  > um span no meio </span> e o fim do paragrafo
+    </p>
+    <p style="background-color:blue ;"> paragrafo
+        <div style="background-color:red ;">
+            div no mieio
+        </div> ifm do paragrafo
+    </p>
+    
+</body>
+</html>

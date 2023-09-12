@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="file" id="fileInput">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAv4CeziiHBhIjJSBjBd5W6v8uPn9vEr50",
+            authDomain: "fdsss-362fb.firebaseapp.com",
+            projectId: "fdsss-362fb",
+            storageBucket: "fdsss-362fb.appspot.com",
+            messagingSenderId: "785866033239",
+            appId: "1:785866033239:web:c22b68c98c4d314784fb12"
+        };
+        firebase.initializeApp(firebaseConfig)
+        // firestore eh um metodo que retorna uma referencia para o banco de dados
+        const storage = firebase.storage();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

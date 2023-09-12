@@ -1,0 +1,15 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "simple app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "start_dev": "set NODE_ENV = development && electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.2.0"
+  }
+}

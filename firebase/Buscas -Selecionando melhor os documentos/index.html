@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDCOmaJ3B3tB2CLdGvh2lw3JEonRD6s4jQ",
+            authDomain: "colegio-34bef.firebaseapp.com",
+            projectId: "colegio-34bef",
+            storageBucket: "colegio-34bef.appspot.com",
+            messagingSenderId: "381931424733",
+            appId: "1:381931424733:web:75ece26c3d7f3d6a3ec434"
+        };
+        firebase.initializeApp(firebaseConfig)
+        firebase.firestore().settings({
+            experimentalForceLongPolling: true,
+            merge: true,
+        });
+        // firestore eh um metodo que retorna uma referencia para o banco de dados
+        const db = firebase.firestore()
+    </script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

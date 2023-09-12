@@ -1,0 +1,16 @@
+.links{
+    text-decoration: none;
+    cursor: s-resize;
+    background-color: chartreuse;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.links:visited{
+    color: black;
+}
+.links:hover{
+    color: aqua;
+    background-color: blue;
+}

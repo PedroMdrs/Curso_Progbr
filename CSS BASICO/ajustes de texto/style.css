@@ -1,0 +1,15 @@
+p{
+    color: yellowgreen;
+    text-align: justify;
+    text-transform: capitalize;
+    text-indent: 5px;
+    /* text-decoration:overline underline line-through; */
+    line-height: 50px;
+    text-shadow: 2px 2px 5px black;
+}
+a{
+    text-decoration: none;
+    color: aqua;
+    letter-spacing: 2px;
+
+}

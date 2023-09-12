@@ -1,0 +1,48 @@
+#FODASE{ 
+    color: rgb(20,100,200); /* rgb tem 3 valores */ 
+    background-color: crimson;
+}
+.CAGUEI{
+    color: rgba(66, 2, 119, 0.3);
+    background-color: blueviolet;
+
+} /* rgba tem 4 valores sendo o 4 a transperencia*/
+.lixo{
+    color: #ff50ff
+}
+#buceta{
+    background: blue;
+    /* ordem: color - bd-image position/bg/size bg-repeat bg origin bg clip bg attachment initial|inherit
+    background-repeat: no-repeat
+    background-size: cover; */ 
+}
+#cm{
+    background-color: gold;
+    width: 1cm;
+    height: 1cm;
+}
+#mm{
+    background-color: rgb(136, 0, 0);
+    width: 10mm;
+    height: 10mm;
+}
+#in{
+    background-color: tomato;
+    width: 1in;
+    height: 1in;
+}
+#pix{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+}
+#pt{
+    background-color: slateblue;
+    width: 10pt;
+    height: 10pt;
+}
+#pc{
+    background-color: springgreen;
+    width: 5pc;
+    height: 5pc;
+}

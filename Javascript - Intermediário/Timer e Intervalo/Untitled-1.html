@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>titulo</h1>
+
+  <input onclick="iniciar()" type="submit" value="iniciar">
+  <input onclick="parar()" type="submit" value="parar">
+
+  <script>
+    // setTimeout executa algo uma vez dps de x tempo
+    // setinterval executa algo mais de uma vez dps de x tempo
+    var numero = 0;
+    var timer;
+    let h = document.getElementsByTagName("h1")[0];
+    function attTxt() {
+      h.style.color = "red";
+      h.innerHTML += " " + numero;
+      numero++;
+    }
+    function iniciar() {
+      h.innerHTML = "novo titulo"
+
+      // setTimeout(mudarCor, 1000)
+      timer = setTimeout(attTxt, 1000)
+    }
+    function parar(){
+      clearInterval(timer);
+    }
+  </script>
+</body>
+
+</html>

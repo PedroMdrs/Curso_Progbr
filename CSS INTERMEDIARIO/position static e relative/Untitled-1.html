@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* POSITION:
+        > STATIC: Eh o posicionamento padrao, faz com que todo elemento se encaixe embaixo do outro elemento se for display block ou do lado se for inline ou inline block
+        > RELATIVE: o posicionamento relativo vai ser relativo ao posicionamento padrao, nesse caso o static, quando usa-se o relative vc pode mudar a posicao do bagulho, pra esquerda,direita etc, diferente do margin que empurra outros elementos, usando o relative ele vai mover apenas o elemento sem mexer nos outros ao redor
+        > ABSOLUTE: quando vc define o posicionamento absoluto pra algo, se voce move o mesmo eh como se vc tirasse ele da jogada e os outros elementos ao redor podem ocupar o espaco dele. A posicao inicial dele nao afeta mais os outros elementos. Alem disso, a posicao relativa nao eh mais referente a posicao inicial e sim do elemento pai, MAAAAAAAS SO EH relativo ao pai SO SE o posicionamento do pai nao for STATIC, se nao a posicao relativa vai ser do primeiro elemento ascendente que nao tiver posicionamento static
+        > 
+        
+        */
+        .quadro{
+            width: 500px;
+            height: 400px;
+            border: 1px solid grey;
+            position: relative;
+        }
+        .quadrado{
+            width: 100px;
+            height: 100px;
+        }
+        .quadrado-red{
+            background-color: red;
+        }
+        .quadrado-blue{
+            background-color: blue;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        .quadrado-green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadro">
+        <div class=" quadrado quadrado-red"></div>
+        <div class=" quadrado quadrado-blue"></div>
+        <div class=" quadrado quadrado-green"></div>
+
+
+    </div>
+</body>
+</html>

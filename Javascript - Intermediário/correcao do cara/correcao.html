@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- ----------------- DESAFIO --------------- -->
+    <label for="text"> tarefas para fazer </label>
+    <input type="text" id="input" />
+    <button onclick="saveTask()">Adicionar</button>
+    <ul id="lista_de_tarefas"></ul>
+    <script>
+      // Criei o array de farefas
+      var tarefas = [];
+      // Pego a lista com o id lista_de_tarefas
+      var lista = document.getElementById("lista_de_tarefas");
+
+      function saveTask() {
+        // pego o valor atual do input no momento que o click
+        // do botão ocorrer
+        let tarefa_atual = document.getElementById("input").value;
+        // coloco esse valor no array
+        tarefas.push(tarefa_atual);
+
+        // Adiciono uma nova tag li dentro da lista com o conteúdo do input
+        lista.innerHTML += `<li>${tarefa_atual}</li>`;
+
+        // Adiciono o próprio array no localStorage
+        localStorage.setItem("tarefas", JSON.stringify(tarefas));
+      }
+
+      // será executado quando o documento for carregado
+      onload = function () {
+       
+        var valor_no_localStorage = localStorage.getItem("tarefas");       
+        if (valor_no_localStorage != null) {     
+          tarefas = JSON.parse(valor_no_localStorage);
+
+          
+          for (var i = 0; i < tarefas.length; i++) {
+            lista.innerHTML += `<li>${tarefas[i]}</li>`;
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

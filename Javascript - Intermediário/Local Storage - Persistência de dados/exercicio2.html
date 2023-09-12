@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <input type="text" id="input">
+    <button onclick="saveTask()">Add</button>
+    <ul id="lista_de_tarefas"></ul>
+
+    <script>
+        var tarefas = [];
+        
+        lista = document.getElementById("lista_de_tarefas");
+
+
+        function saveTask(){
+            tarefa_atual = document.getElementById("input").value;
+
+            tarefas.push(tarefa_atual);
+
+            lista.innerHTML += `<li>${tarefa_atual}</li>`;
+
+            localStorage.setItem("tarefas",JSON.stringify(tarefas));
+        }
+        onload = function () {
+
+            var valor_no_storage = localStorage.getItem("tarefas");
+            if (valor_no_storage != null) {
+                tarefas = JSON.parse(valor_no_storage);
+        
+                for (var i = 0; i < tarefas.length; i++) {
+                    lista.innerHTML += `<li>${tarefas[i]}</li>`;                 
+                }
+            }
+        };
+        
+    </script>
+</body>
+</html>

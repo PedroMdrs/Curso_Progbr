@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body>
+    <h1 id="nome"></h1>
+   <input type="text" oninput="atualizar(this)">
+
+<script>
+    // local storage tem tres metodos
+    // setitem = grava um dado na memoria do navegador
+    // getItem = get item acessa a memoria e pega o dado
+    // removeItem apaga o dado da memoria do navegador
+    // no local storage so da pra armazenar strings, entao se eu botar um numero pra guardar ele vai guardar uma string
+    // Persistencia de dados eh gravar os dados pra depois usar eles
+    // localstorage.clear() limpa a memoria
+    let storaged = localStorage.getItem("titulo");
+    let h1 = document.getElementById("nome");
+    h1.innerHTML = storaged;
+    function atualizar(x) {
+        let valor = x.value;
+        h1 = document.getElementById("nome");
+        h1.innerText = valor;
+        localStorage.setItem("titulo", valor)
+    }
+
+    localStorage.setItem("numero", 5);
+    let n = localStorage.getItem("numero")
+    console.log(JSON.parse(n))
+</script> 
+</body>
+</html>

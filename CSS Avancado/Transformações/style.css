@@ -1,0 +1,9 @@
+/* img{
+    transform: skew(30Deg, 30Deg) scale(0.7, 1)
+} */
+div{ 
+    background-color: blueviolet;
+    width: 420px;
+    height: 300px;
+    transform: skew(30Deg, 30Deg) scale(0.7, 1)
+}

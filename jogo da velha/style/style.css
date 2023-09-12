@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+}
+h1{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: gray;
+    border: 1px solid gray;
+    display: inline-block;
+}
+.o{
+    position: relative;
+}
+.o::after{
+    content: "\1F975";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.x{
+    position: relative;
+}
+.x::after{
+    content: "\1F976";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+button{
+    margin-top: 50px;
+    width: 100px;
+    height: 50px;
+}

@@ -1,0 +1,49 @@
+a<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pra alinhar por exemplo uma imagem no meio da tela, nao da certo usar o margin auto pq o elemento precisa ser do tipo block, e no caso da imagem ela nao eh. Duas formas de se arrumar isso sao: 
+        1: mudar o tipo de display da imagem
+        2: caso a imagem precise ter outro display que n seja o block, botar a imagem dentro de uma DIV e nessa div usar o comando text-allign:   */
+        body{
+            font-size: 1.2rem;
+        }
+        #quadrado{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            margin: auto;
+        }
+        #maki{
+            /*width: 400px;
+            height: 400px; */
+            /* margin: auto;
+            display: block; */
+            text-align: center;  /* >>>> text-align:  vai na div */
+        }
+        #fotomakima1{
+            display: inline-block;             
+            width: 500px;
+            height: 500px;
+        }
+        #makima2{
+            width: 500px;
+            height: 500px;
+            display: inline-block;
+            text-align: center; /* >> nao funciona mesmo estando inlineblock, tem q botar dentro de uma div e jogar esse comando nela */
+        }
+    </style>
+</head>
+<body>
+    <div id="quadrado"></div>
+    <!-- <img id="maki" src="67d807854fcaea48bfd3835f6aca6eef.jpg" alt="makima"> -->
+    <div id="maki">
+        <img id="fotomakima1" src="67d807854fcaea48bfd3835f6aca6eef.jpg" alt="makima">
+    </div>
+    <img id="makima2" src="67d807854fcaea48bfd3835f6aca6eef.jpg" alt="makima">
+</body>
+</html>
